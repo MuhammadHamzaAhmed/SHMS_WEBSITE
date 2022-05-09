@@ -42,5 +42,13 @@
   },
   "devDependencies": {
     "typescript": "^4.5.4"
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhammadHamzaAhmed/SHMS_WEBSITE/issues"
+  },
+  "homepage": "https://github.com/MuhammadHamzaAhmed/SHMS_WEBSITE#readme",
+  "description": ""
 }

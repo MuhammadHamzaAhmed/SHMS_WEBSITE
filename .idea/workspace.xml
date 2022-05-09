@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34dd552b-1cbc-41a9-bc82-f5158a5ddbc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/.bin/loose-envify" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/js-tokens/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/js-tokens/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/js-tokens/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/js-tokens/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/js-tokens/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/cli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/loose-envify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/loose-envify/replace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-dev-runtime.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-dev-runtime.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-dev-runtime.profiling.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-runtime.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-runtime.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react-jsx-runtime.profiling.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react.shared-subset.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/cjs/react.shared-subset.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/jsx-dev-runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/jsx-runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/react.shared-subset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/umd/react.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/umd/react.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/node_modules/react/umd/react.profiling.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smhs_website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SHMS_Website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DBConnection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Records.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Records.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28wQwH16Fy3EGnF5s8eF69KV62u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34dd552b-1cbc-41a9-bc82-f5158a5ddbc5" name="Changes" comment="" />
+      <created>1652125404280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652125404280</updated>
+      <workItem from="1652125405856" duration="1480000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
