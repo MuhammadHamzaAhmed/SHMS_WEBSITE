@@ -1,0 +1,15 @@
+.MultiTableRow-root>*{
+    padding: 10px;
+}
+.MultiTableRow-root.MultiTableRow-head>*{
+    font-weight: bold !important;
+}
+.Table td, th{
+    border: none !important;
+}
+.Table:first-child{
+    border-radius: 0.7rem !important;
+}
+.heading{
+    padding-bottom: 10px;
+}
