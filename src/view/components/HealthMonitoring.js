@@ -2,16 +2,15 @@ import React from "react";
 import '../css/HealthMonitoring.css'
 import Cards from "./Cards";
 import BasicTable from "./Table";
-import {CardData} from "./Data";
 
 
-function HealthMonitoring(){
 
+function HealthMonitoring(props){
     return (
         <div className="mainDash">
             <h1 className="space">Dashboard</h1>
-            <Cards CardData={CardData}/>
-            <BasicTable/>
+            <Cards email={props.email}/>
+            <BasicTable email={props.email}/>
         </div>
     )
 }

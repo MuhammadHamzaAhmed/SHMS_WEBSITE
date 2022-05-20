@@ -7,20 +7,12 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import "../css/Table.css"
+import {useState} from "react";
+import {healthMonitoringDB} from "../../Model/Database";
 
-function createData(temp, bp, hr, sg) {
-    return {temp, bp, hr, sg};
-}
-
-const rows = [
-    createData( 159, 6.0, 24, 4.0),
-    createData( 237, 9.0, 37, 4.3),
-    createData(262, 16.0, 24, 6.0),
-    createData( 305, 3.7, 67, 4.3),
-    createData(356, 16.0, 49, 3.9),
-];
-
-export default function BasicTable() {
+export default function BasicTable(props) {
+    const [rows, setRow] = useState([])
+    healthMonitoringDB(props.email, setRow)
     return (
         <div>
             <div className="heading">
@@ -29,7 +21,8 @@ export default function BasicTable() {
             <TableContainer component={Paper}>
                 <Table sx={{minWidth: 650}} aria-label="simple table">
                     <TableHead>
-                        <TableRow>
+                        <TableRow >
+                            <TableCell align="left">Date</TableCell>
                             <TableCell align="left">Temperature</TableCell>
                             <TableCell align="left">Blood Pressure</TableCell>
                             <TableCell align="left">Heart Rate</TableCell>
@@ -37,18 +30,13 @@ export default function BasicTable() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows.map((row) => (
-                            <TableRow
-                                key={row.name}
-                                sx={{'&:last-child td, &:last-child th': {border: 0}}}
-                            >
-                                <TableCell component="th" scope="row">
-                                    {row.name}
-                                </TableCell>
-                                <TableCell align="left">{row.temp}</TableCell>
-                                <TableCell align="left">{row.bp}</TableCell>
-                                <TableCell align="left">{row.hr}</TableCell>
-                                <TableCell align="left">{row.sg}</TableCell>
+                        {rows.map((row, key) => (
+                            <TableRow key={key} style={{border:"none"}}>
+                                <TableCell style={{border:"none"}} align="left">{row.dt}</TableCell>
+                                <TableCell style={{border:"none"}} align="left">{row.temp}</TableCell>
+                                <TableCell style={{border:"none"}} align="left">{row.bp}</TableCell>
+                                <TableCell style={{border:"none"}} align="left">{row.hr}</TableCell>
+                                <TableCell style={{border:"none"}} align="left">{row.sg}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

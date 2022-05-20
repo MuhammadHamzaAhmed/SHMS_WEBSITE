@@ -1,6 +1,19 @@
 .RightSide{
     display: flex;
     flex-direction: column;
-    width: 95%;
     justify-content: flex-start;
+    width: 95%;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+.head{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

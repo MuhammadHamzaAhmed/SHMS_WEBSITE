@@ -24,7 +24,7 @@ function CompactCard({param}){
             <div className="detail">
                 {param.barText}
                 <span>{param.title}</span>
-                <span>Last Record</span>
+                <span>{param.png}</span>
             </div>
         </div>
     )

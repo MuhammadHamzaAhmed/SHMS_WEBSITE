@@ -1,5 +1,5 @@
 .MultiTableRow-root>*{
-    padding: 10px;
+    padding: 10px !important;
 }
 .MultiTableRow-root.MultiTableRow-head>*{
     font-weight: bold !important;

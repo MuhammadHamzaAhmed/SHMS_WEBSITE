@@ -7,21 +7,30 @@ import Service from "./view/pages/Services";
 import Aboutus from "./view/pages/Aboutus";
 import Contactus from "./view/pages/Contactus";
 import Dashboard from "./view/pages/Dashboard";
+import {useState, useEffect} from "react";
+
 
 function App() {
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
+    const [main_user, setMainUser] = useState({name:'',email:'',pass:'',profile:''})
+    const [showNav, setNav] = useState(true)
+    useEffect(()=>{
+            const nav = JSON.parse(window.localStorage.getItem('navigation'))
+            setNav(nav)
+    }, [])
+    useEffect(()=>{
+        window.localStorage.setItem('navigation', JSON.stringify('nav'))
+    })
     return (
         <>
-            <Router>
-                {page !== "dashboard" && <Navbar/>}
+            <Router his>
+                {showNav && <Navbar/>}
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/sign-up" element={<Signup/>}/>
+                    <Route path="/sign-up" element={<Signup user={main_user} setNav={setNav} setMainUser={setMainUser}/>}/>
                     <Route path="/services" element={<Service/>}/>
                     <Route path="/aboutus" element={<Aboutus/>}/>
                     <Route path="/contactus" element={<Contactus/>}/>
-                    <Route path="/dashboard" element={<Dashboard/>}/>
+                    <Route path="/dashboard" element={<Dashboard user={main_user} setNav={setNav}/>}/>
                 </Routes>
             </Router>
         </>

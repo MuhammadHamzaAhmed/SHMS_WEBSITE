@@ -55,3 +55,12 @@
     background: var(--primary);
     margin-right: calc(1rem - 8px);
 }
+
+@media screen and (max-width: 1200px){
+    .menuItem>span{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}

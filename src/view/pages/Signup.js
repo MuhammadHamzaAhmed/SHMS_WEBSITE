@@ -3,10 +3,60 @@ import '../css/Signin.css'
 import log from '../../images/log.svg'
 import register from '../../images/register.svg'
 import {SignUpData, SignInData} from "../components/Data";
+import DatePicker from "../components/DatePicker";
+import RowRadioButtonsGroup from "../components/RadioButton";
+import {useNavigate} from 'react-router-dom'
+import {getUser} from "../../Model/Database";
 
 
-function Signup(){
-    const [selected, setSelected] = useState(new Date("1999-08-26T12:00:00"))
+function Signup(props) {
+    const [date, setDate] = useState(new Date("1999-08-26T12:00:00"))
+    const handleChange = (newValue) => {
+        setDate(newValue);
+    };
+    const [email, setEmail] = useState('');
+    const emailChange = (newValue) => {
+        setEmail(newValue.target.value);
+    };
+    const [pass, setPass] = useState('')
+    const passChange = (newValue) => {
+        setPass(newValue.target.value);
+    };
+
+    const [gender, setGender] = useState();
+    const handleGender = (newValue) => {
+        setGender(newValue.target.value)
+    };
+    const [userName, setUserName] = useState('');
+    const [sEmail, setSignEmail] = useState('');
+    const [sPass, setSignPass] = useState('');
+    const handleUserName = (newValue) => {
+        setUserName(newValue.target.value)
+    };
+    const handleEmail = (newValue) => {
+        setSignEmail(newValue.target.value)
+    };
+    const handlePass = (newValue) => {
+        setSignPass(newValue.target.value)
+    };
+
+    const values = [email, pass, userName, sEmail, sPass];
+    const change = [emailChange, passChange, handleUserName, handleEmail, handlePass];
+    let navigate = useNavigate()
+
+    const routeChange = () =>{
+        let path = "../dashboard"
+        navigate(path, {replace:true})
+    }
+
+    const login = () => {
+        getUser(email, pass, props.setMainUser)
+        if(props.user.name !== ''){
+            props.setNav(false)
+            routeChange()
+        }
+    }
+
     return (
         <>
             <div className="container">
@@ -14,28 +64,35 @@ function Signup(){
                     <div className="signin-signup">
                         <form action="#" className="sign-in-form">
                             <h2 className="title">Sign in</h2>
-                            {SignInData.map((data, id)=>{
-                                return(
-                                    <div className="input-field">
+                            {SignInData.map((data, id) => {
+                                return (
+                                    <div className="input-field" key={id}>
                                         {data.icon}
-                                        <input type={data.type} placeholder={data.placeholder}/>
+                                        <input type={data.type} value={values[data.value]}
+                                               onChange={change[data.onChange]} placeholder={data.placeholder}/>
                                     </div>
                                 )
                             })}
-                            <input type="submit" value="Login" className="sbtn solid"/>
+                            <input type="submit" value="Login" className="sbtn solid" onClick={login}/>
                         </form>
                         <form action="#" className="sign-up-form">
                             <h2 className="title">Sign up</h2>
-                            {SignUpData.map((data, id)=>{
-                                return(
-                                    <div className="input-field">
+                            {SignUpData.map((data, id) => {
+                                return (
+                                    <div className="input-field" key={id}>
                                         {data.icon}
-                                        <input type={data.type} placeholder={data.placeholder}/>
+                                        <input type={data.type} value={values[data.value]}
+                                               onChange={change[data.onChange]} placeholder={data.placeholder}/>
                                     </div>
                                 )
                             })}
-
-                            <input type="submit" className="sbtn" value="Sign up"/>
+                            <DatePicker value={date} change={handleChange}/>
+                            <RowRadioButtonsGroup change={handleGender}/>
+                            <input type="submit" className="sbtn" value="Sign up" onClick={() => {
+                                setSignEmail('');
+                                setUserName("")
+                                setSignPass("")
+                            }}/>
                         </form>
                     </div>
                 </div>
@@ -47,9 +104,10 @@ function Signup(){
                             <p>
                                 Join us now to get best quality healthcare.
                             </p>
-                            <button className="sbtn transparent" onClick={()=>{
+                            <button className="sbtn transparent" onClick={() => {
                                 const container = document.querySelector('.container');
-                                container.classList.add("sign-up-mode");}
+                                container.classList.add("sign-up-mode");
+                            }
                             } id="sign-up-btn">
                                 Sign up
                             </button>
@@ -62,9 +120,10 @@ function Signup(){
                             <p>
                                 Login to view your current health status.
                             </p>
-                            <button className="sbtn transparent" onClick={()=>{
+                            <button className="sbtn transparent" onClick={() => {
                                 const container = document.querySelector('.container');
-                                container.classList.remove("sign-up-mode");}
+                                container.classList.remove("sign-up-mode");
+                            }
                             } id="sign-in-btn">
                                 Sign in
                             </button>

@@ -1,0 +1,34 @@
+.setting{
+    display: flex;
+    width: 90%;
+    background: white;
+    border-radius: 0.7rem;
+    padding: 3rem;
+    margin: 5rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.input-ex{
+    border: 2px solid lightgrey;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.7rem;
+    width: 20rem;
+}
+.input-div{
+    display: flex;
+    justify-content: flex-start;
+}
+.input-div h3{
+    margin-top: 1.8rem;
+}
+.input-last{
+    background: #B5FFF2;
+    border: 0;
+}
