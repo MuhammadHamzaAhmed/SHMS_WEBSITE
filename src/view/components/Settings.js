@@ -1,5 +1,5 @@
+import React, {useState} from "react";
 import '../css/setting.css'
-import {useEffect, useState} from "react";
 import {setPass} from "../../Model/Database";
 
 function HeartAttack(props){

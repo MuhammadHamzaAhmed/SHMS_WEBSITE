@@ -6,7 +6,7 @@ import {SignUpData, SignInData} from "../components/Data";
 import DatePicker from "../components/DatePicker";
 import RowRadioButtonsGroup from "../components/RadioButton";
 import {useNavigate} from 'react-router-dom'
-import {getUser} from "../../Model/Database";
+import {addUser, getUser} from "../../Model/Database";
 
 
 function Signup(props) {
@@ -56,6 +56,15 @@ function Signup(props) {
             routeChange()
         }
     }
+    
+    const signUP = () => {
+        let dt = date.getFullYear()
+        let mn = (date.getMonth()+1).toString()
+        if(mn.length === 1){mn = "0"+mn}
+        let dat = date.getDate().toString()
+        if(dat.length === 1)(dat = "0"+dat)
+        addUser(userName, sEmail, pass, dt+"-"+mn+"-"+dat, gender)
+    }
 
     return (
         <>
@@ -88,7 +97,9 @@ function Signup(props) {
                             })}
                             <DatePicker value={date} change={handleChange}/>
                             <RowRadioButtonsGroup change={handleGender}/>
-                            <input type="submit" className="sbtn" value="Sign up" onClick={() => {
+                            <input type="submit" className="sbtn" value="Sign up" onClick={(event) => {
+                                event.preventDefault();
+                                signUP();
                                 setSignEmail('');
                                 setUserName("")
                                 setSignPass("")

@@ -52,7 +52,7 @@ function Footer() {
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link to='/' className="social-logo">
-                            SHMS <img src={logo}/>
+                            SHMS <img src={logo} alt=""/>
                         </Link>
                     </div>
                     <small className='website-rights'>SHMS © 2021</small>

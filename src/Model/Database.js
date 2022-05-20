@@ -19,14 +19,7 @@ export const getUser = (email, pass, setMainUser) => {
 }
 
 export const addUser=(name, email, pass, date, gender)=>{
-    let date_s = ""+date.getFullYear()
-    const mon = (date.getMonth()+1).toString()
-    const month = (mon.length === 1)?"0"+mon:mon;
-    date_s = date_s + "-" + month + "-"
-    let dat = date.getDate().toString()
-    dat = (dat.length === 1)?"0"+dat:dat;
-    date_s = date_s+dat
-    const url = host+'user?email='+email+'&name='+name+'&pass='+pass+'&gender='+gender+'&date='+date_s
+    const url = host+'signup?email='+email+'&name='+name+'&pass='+pass+'&gen='+gender+'&dob='+date
     Axios.post(url).then(()=>{
         alert("successfully account created")
     })
